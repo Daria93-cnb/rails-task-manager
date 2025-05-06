@@ -3,7 +3,8 @@
 <ul>
   <% @tasks.each do |task| %>
     <li>
-      <%= task.title %> <!-- Display the task's title -->
+      <%= task.title %>
+      <%= link_to 'Edit', edit_task_path(task), class: 'btn btn-sm btn-secondary' %>
     </li>
   <% end %>
 </ul>
